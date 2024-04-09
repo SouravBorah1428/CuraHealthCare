@@ -60,6 +60,11 @@ public class WebDriverUtility {
 
     // Method to scroll down the page
     public static void scrollDown() {
-        javascriptExecutor.executeScript()
+        javascriptExecutor.executeScript("window.scrollBy(0, " + TestConstants.SCROLL_UP + ");", "");
+    }
+
+    // Method to scroll up the page
+    public static void scrollUp() {
+        javascriptExecutor.executeScript("window.scrollBy(0, " + TestConstants.SCROLL_DOWN + ");", "");
     }
 }

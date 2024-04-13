@@ -1,4 +1,7 @@
 package org.cura.pages.functions;
 
-public class HomePage {
+import org.cura.pages.elements.HomePageElements;
+
+public class HomePage extends HomePageElements {
+
 }

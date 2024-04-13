@@ -3,7 +3,7 @@ package org.cura.base;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.cura.pages.functions.HomePage;
+import org.cura.pages.functions.LandingPage;
 import org.cura.utils.PropUtils;
 import org.cura.utils.TestConstants;
 import org.openqa.selenium.WebDriver;
@@ -16,7 +16,7 @@ import java.net.URL;
 import java.util.concurrent.TimeUnit;
 
 public class BaseClass {
-    static final Logger logger = LogManager.getLogger(HomePage.class.getName());
+    static final Logger logger = LogManager.getLogger(LandingPage.class.getName());
     public static WebDriver driver;
     private static String browser;
     private static String baseUrl;

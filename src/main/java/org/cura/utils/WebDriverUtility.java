@@ -2,7 +2,7 @@ package org.cura.utils;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.cura.pages.functions.HomePage;
+import org.cura.pages.functions.LandingPage;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -12,7 +12,7 @@ import org.openqa.selenium.interactions.Actions;
  This class contains the common utility methods related to the driver
  */
 public class WebDriverUtility {
-    static final Logger logger = LogManager.getLogger(HomePage.class.getName());
+    static final Logger logger = LogManager.getLogger(LandingPage.class.getName());
 
     private static WebDriver driver;
     private static Actions actions;

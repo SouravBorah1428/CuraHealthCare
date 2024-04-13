@@ -32,6 +32,12 @@ public class LandingPage extends LandingPageElements {
     public void clickHomeButton() {
         logger.info("Clicking on Home Button from cog menu");
         driverUtility.click(cogMenuBtn);
-        WebDriverWait wait = new WebDriverWait(driverUtility, Duration.ofSeconds(30));
+        driverUtility.click(homeBtnLink);
+    }
+
+    public void clickLoginButton() {
+        logger.info("Clicking on Login Button from cog menu");
+        driverUtility.click(cogMenuBtn);
+        driverUtility.click(loginBtnLink);
     }
 }
